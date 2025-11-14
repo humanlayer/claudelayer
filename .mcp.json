@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "agent": {
+      "type": "stdio",
+      "command": "bun",
+      "args": [
+        "run",
+        "src/index.ts"
+      ],
+      "env": {}
+    }
+  }
+}

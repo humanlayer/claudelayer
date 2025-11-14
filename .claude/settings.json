@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(./hack/spec_metadata.sh)",
+      "Bash(hack/spec_metadata.sh)",
+      "Bash(bash hack/spec_metadata.sh)"
+    ]
+  },
+  "enableAllProjectMcpServers": true,
+  "env": {
+    "MAX_THINKING_TOKENS": "4000",
+    "CLAUDE_BASH_MAINTAIN_WORKING_DIR": "1"
+  },
+  "alwaysThinkingEnabled": false,
+  "model": "opus"
+}

@@ -1,0 +1,68 @@
+{
+    "$schema": "https://biomejs.dev/schemas/2.2.5/schema.json",
+    "vcs": {
+        "enabled": false,
+        "clientKind": "git",
+        "useIgnoreFile": false
+    },
+    "files": {
+        "ignoreUnknown": true,
+        "includes": [
+            "sst.config.ts",
+            "apps/**/*.ts*",
+            "packages/**/*.ts*",
+            "contracts/**/*.ts*",
+            "infra/**/*.ts*",
+            "!packages/ui/src/**/*.ts*",
+            "!apps/hld/**/*.ts*",
+            "!**/*/daemonClient.ts",
+            "!apps/dashboard/.react-router/**/*",
+            "!apps/wui/src/lib/daemon/http-client.ts",
+            "!**/*/sst-env.d.ts",
+            "!**/*.stories.ts*"
+        ]
+    },
+    "formatter": {
+        "enabled": true,
+        "indentStyle": "tab",
+        "indentWidth": 4,
+        "lineWidth": 120
+    },
+    "linter": {
+        "enabled": true,
+        "rules": {
+            "recommended": true,
+            "correctness": {
+                "useUniqueElementIds": "off",
+                "noUnusedFunctionParameters": "off"
+            },
+            "a11y": "off",
+            "suspicious": {
+                "noExplicitAny": "off",
+                "noArrayIndexKey": "off",
+                "useIterableCallbackReturn": "off"
+            },
+            "complexity": {
+                "noBannedTypes": "off"
+            },
+            "style": {
+                "noNonNullAssertion": "off"
+            }
+        }
+    },
+    "javascript": {
+        "formatter": {
+            "quoteStyle": "single",
+            "semicolons": "asNeeded",
+            "indentWidth": 4
+        }
+    },
+    "assist": {
+        "enabled": true,
+        "actions": {
+            "source": {
+                "organizeImports": "on"
+            }
+        }
+    }
+}

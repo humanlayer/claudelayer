@@ -1,0 +1,6 @@
+
+# Claude Code local settings
+.claude/settings.local.json
+outputs
+node_modules
+*.log
