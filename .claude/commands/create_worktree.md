@@ -1,4 +1,3 @@
-
 ---
 description: Create worktree and launch implementation session for a plan
 ---

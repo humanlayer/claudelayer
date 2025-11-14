@@ -1,5 +1,6 @@
 ---
 name: launch_subagents
+description: launch lots of subagents
 model: sonnet
 ---
 
