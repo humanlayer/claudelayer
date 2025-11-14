@@ -53,10 +53,14 @@ server.registerTool(
             stdout: 'pipe', 
             stderr: 'pipe'
         })
-
-        const claudeResponse = await claudeSubprocess.stdout.text()
-        await fs.appendFile('output.log', claudeResponse)
-        return { content: [{type: 'text', text: claudeResponse}]}
+        const textDecoder = new TextDecoder()
+        let response = ''
+        for await (const chunk of claudeSubprocess.stdout) {
+            await fs.appendFile('output.log', textDecoder.decode(chunk))
+            response += textDecoder.decode(chunk)
+        }
+        
+        return { content: [{type: 'text', text: response}]}
     }
 )
 
