@@ -43,7 +43,6 @@ export async function getSubagents(): Promise<[AgentConfiguration, ...AgentConfi
 
     if (agents.length === 0) throw new Error("No sub-agents detected")
     return agents as [AgentConfiguration, ...AgentConfiguration[]]
-
 }
 
 /**

@@ -10,7 +10,7 @@
   "env": {
     "MAX_THINKING_TOKENS": "4000",
     "CLAUDE_BASH_MAINTAIN_WORKING_DIR": "1",
-    "MCP_TIMEOUT": "10000000000"
+    "MCP_TIMEOUT": "1000000"
   },
   "alwaysThinkingEnabled": false,
   "model": "opus"
